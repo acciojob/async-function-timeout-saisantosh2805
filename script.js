@@ -1,10 +1,11 @@
 //your JS code here. If required.
-document.getElementById("btn").add eventlistener("click",async function(){
-	const Textinput =document.getElementById(text).value;
-	const Textinput =document.getElementById(delay).value;
-	const Textinput =document.getElementById(output);
-	
-		 const delay = parseInt(delayInput, 10);
+document.getElementById("btn").addEventListener("click", async function () {
+  const textInput = document.getElementById("text").value;
+  const delayInput = document.getElementById("delay").value;
+  const outputDiv = document.getElementById("output");
+
+  // Convert the delay to milliseconds (assuming input is in milliseconds)
+  const delay = parseInt(delayInput, 10);
 
   // Reset the output div
   outputDiv.textContent = "";
@@ -24,6 +25,3 @@ document.getElementById("btn").add eventlistener("click",async function(){
     outputDiv.textContent = "Please enter valid text and delay.";
   }
 });
-	
-	
-}
